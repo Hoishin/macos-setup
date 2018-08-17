@@ -132,6 +132,9 @@ mas install 441258766 # Magnet
 # Change screen shot output directory
 defaults write com.apple.screencapture location ~/Pictures/screenshots
 
+# Enable hold-to-repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
 # Install Plug for neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
