@@ -29,8 +29,9 @@ done;
 unset file;
 
 # pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-export PYENV_ROOT="${HOME}/.pyenv"
+eval "$(pyenv virtualenv-init -)"
 
 # rbenv
 eval "$(rbenv init -)"
@@ -46,6 +47,12 @@ export NVM_DIR="$HOME/.nvm"
 # Print out NODE_ENV because sometimes it automatically set production before login
 echo "NODE_ENV is '${NODE_ENV}'"
 
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
 # MUST BE AT THE END
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-

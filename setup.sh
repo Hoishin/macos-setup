@@ -55,8 +55,6 @@ brew install pigz
 brew install pngcheck
 brew install postgresql
 brew install pv
-brew install pyenv
-brew install rbenv
 brew install rename
 brew install rethinkdb
 brew install rlwrap
@@ -139,6 +137,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 
 # Register brew zsh as acceptable shell
 sudo sh -c "echo $(which zsh) >> /etc/shells"
+
+# Make local bin
+mkdir -p ~/bin
+
+# Install pyenv and rbenv
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
 
 # Default to zsh
 chsh -s $(which zsh)
