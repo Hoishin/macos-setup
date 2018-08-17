@@ -77,6 +77,7 @@ brew install yarn --without-node
 brew install zopfli
 brew install zsh
 brew install zsh-syntax-highlighting
+brew install mongodb
 
 # Fonts
 brew tap bramstein/webfonttools
