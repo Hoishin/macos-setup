@@ -114,6 +114,7 @@ brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
+brew cask install firefox
 
 # Dependent of Java
 brew install bfg
