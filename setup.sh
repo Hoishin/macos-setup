@@ -115,6 +115,7 @@ brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install firefox
+brew cask install fork
 
 # Dependent of Java
 brew install bfg
