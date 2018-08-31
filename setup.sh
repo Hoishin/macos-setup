@@ -78,6 +78,8 @@ brew install zopfli
 brew install zsh
 brew install zsh-syntax-highlighting
 brew install mongodb
+brew install nginx
+brew install bat
 
 # Fonts
 brew tap bramstein/webfonttools
