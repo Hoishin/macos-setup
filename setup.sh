@@ -80,6 +80,7 @@ brew install zsh-syntax-highlighting
 brew install mongodb
 brew install nginx
 brew install bat
+brew install go
 
 # Fonts
 brew tap bramstein/webfonttools
