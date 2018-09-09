@@ -19,6 +19,7 @@ export PATH="$HOME/bin:$PATH";
 
 # Add brew-related paths
 export PATH="/usr/local/opt/ccache/libexec:$PATH"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
