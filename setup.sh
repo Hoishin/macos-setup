@@ -120,6 +120,7 @@ brew cask install vlc
 brew cask install firefox
 brew cask install fork
 brew cask install google-backup-and-sync
+brew cask install tweeten
 
 # Dependent of Java
 brew install bfg
@@ -135,6 +136,7 @@ curl -L https://github.com/creationix/nvm/raw/master/install.sh | bash
 # Install applications from App Store
 mas install 1160374471 # PiPifier
 mas install 441258766 # Magnet
+mas install 1176895641 # Spark (email client)
 
 # Change screen shot output directory
 defaults write com.apple.screencapture location ~/Pictures/screenshots
