@@ -1,6 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-set -e
+set -eu
+
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -24,7 +26,6 @@ pip install flake8
 ln -s $(pyenv which flake8) ~/bin/flake8
 
 echo "Add the following lines to your init.vim"
-echo
+echo ""
 echo "let g:python_host_prog = '$PY_PATH_2'"
 echo "let g:python3_host_prog = '$PY_PATH_3'"
-

@@ -1,0 +1,173 @@
+#!/bin/bash
+
+set -eu
+
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install packages from Homebrew
+brew update
+brew upgrade
+brew tap bramstein/webfonttools
+
+brew install \
+	ag \
+	aircrack-ng \
+	binutils \
+	binwalk \
+	cifer \
+	clang-format \
+	cloc \
+	coreutils \
+	cppcheck \
+	crystal-lang \
+	ctags \
+	dex2jar \
+	dns2tcp \
+	fcrackzip \
+	fd \
+	findutils \
+	flawfinder \
+	foremost \
+	git \
+	git-lfs
+	gnupg \
+	gnu-sed \
+	grep \
+	hashpump \
+	hydra \
+	john \
+	knock \
+	libidn \
+	libmagic \
+	lua \
+	lynx \
+	mas \
+	moreutils \
+	neovim \
+	netpbm \
+	nmap \
+	openssh \
+	p7zip \
+	pigz \
+	pngcheck \
+	postgresql \
+	pv \
+	rename \
+	rethinkdb \
+	rlwrap \
+	screen \
+	socat \
+	sqlmap \
+	ssh-copy-id \
+	streamlink \
+	tcpflow \
+	tcpreplay \
+	tcptrace \
+	tmux \
+	tree \
+	ucspi-tcp \
+	vbindiff \
+	wget \
+	xpdf \
+	xz \
+	zopfli \
+	zsh \
+	zsh-syntax-highlighting \
+	mongodb \
+	nginx \
+	bat \
+	go \
+	webp \
+	protobuf \
+	ideviceinstaller \
+	ios-deploy \
+	cocoapods \
+	doctl \
+	sfnt2woff \
+	sfnt2woff-zopfli \
+	woff2
+
+# installation with options
+brew install ffmpeg \
+	--with-chromaprint \
+	--with-fdk-aac \
+	--with-fontconfig \
+	--with-freetype \
+	--with-frei0r \
+	--with-game-music-emu \
+	--with-libass \
+	--with-libbluray \
+	--with-libbs2b \
+	--with-libcaca \
+	--with-libgsm \
+	--with-libmodplug \
+	--with-libsoxr \
+	--with-libssh \
+	--with-libvidstab \
+	--with-libvorbis \
+	--with-libvpx \
+	--with-opencore-amr \
+	--with-openh264 \
+	--with-openjpeg \
+	--with-openssl \
+	--with-opus \
+	--with-rtmpdump \
+	--with-rubberband \
+	--with-sdl2 \
+	--with-snappy \
+	--with-speex \
+	--with-tesseract \
+	--with-theora \
+	--with-tools \
+	--with-two-lame \
+	--with-wavpack \
+	--with-webp \
+	--with-x265 \
+	--with-xz \
+	--with-zeromq \
+	--with-zimg
+brew install imagemagick --with-webp
+brew install yarn --without-node
+brew install --HEAD libimobiledevice
+
+# Cask
+brew tap homebrew/cask
+brew cask install \
+	1password
+	1password-cli \
+	atom \
+	discord \
+	docker \
+	gimp \
+	gitkraken \
+	google-chrome \
+	google-japanese-ime \
+	hyperswitch \
+	insomnia \
+	iterm2 \
+	java \
+	kap \
+	karabiner-elements \
+	libreoffice \
+	obs \
+	postico \
+	slack \
+	spotify \
+	streamlink-twitch-gui \
+	vagrant \
+	vagrant-manager \
+	virtualbox \
+	visual-studio-code \
+	vlc \
+	firefox \
+	fork \
+	google-backup-and-sync \
+	tweeten \
+	android-studio \
+	gpg-suite
+
+# Dependent of Java
+brew install bfg sbt
+
+brew cleanup

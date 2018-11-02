@@ -1,8 +1,13 @@
-set -e
+#!/bin/bash
 
-source ~/.nvm/nvm.sh
+set -eu
+
+curl -fsL https://github.com/creationix/nvm/raw/master/install.sh | bash
+source $HOME/.nvm/nvm.sh
+
 nvm install 10
-node -v
+
+npm install --global pure-prompt
 
 yarn global add \
 	@nestjs/cli \
@@ -34,7 +39,6 @@ yarn global add \
 	pm2 \
 	prettier \
 	public-ip-cli \
-	pure-prompt \
 	release-it \
 	serverless \
 	sort-package-json \
@@ -52,4 +56,3 @@ yarn global add \
 	vuepress \
 	xo \
 	yo
-

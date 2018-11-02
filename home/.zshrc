@@ -14,13 +14,6 @@ unsetopt autocd beep notify
 # vim style keybinds
 bindkey -v
 
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
-
-# Add brew-related paths
-export PATH="/usr/local/opt/ccache/libexec:$PATH"
-export PATH="$PATH:/usr/local/opt/go/libexec/bin"
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -30,7 +23,6 @@ done;
 unset file;
 
 # pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
@@ -54,6 +46,9 @@ echo "NODE_ENV is '${NODE_ENV}'"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/hoishin/.config/yarn/global/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+# added by travis gem
+[ -f /Users/hoishin/.travis/travis.sh ] && source /Users/hoishin/.travis/travis.sh
 
 # MUST BE AT THE END
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
