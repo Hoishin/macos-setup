@@ -87,7 +87,8 @@ brew install \
 	sfnt2woff-zopfli \
 	woff2 \
 	libiconv \
-	rsync
+	rsync \
+	make
 
 # installation with options
 brew install ffmpeg \
