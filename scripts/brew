@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -12,7 +12,6 @@ brew tap bramstein/webfonttools
 
 brew install \
 	ag \
-	aircrack-ng \
 	binutils \
 	binwalk \
 	cifer \
@@ -30,7 +29,7 @@ brew install \
 	flawfinder \
 	foremost \
 	git \
-	git-lfs
+	git-lfs \
 	gnupg \
 	gnu-sed \
 	grep \
@@ -86,7 +85,9 @@ brew install \
 	doctl \
 	sfnt2woff \
 	sfnt2woff-zopfli \
-	woff2
+	woff2 \
+	libiconv \
+	rsync
 
 # installation with options
 brew install ffmpeg \
@@ -129,12 +130,11 @@ brew install ffmpeg \
 	--with-zimg
 brew install imagemagick --with-webp
 brew install yarn --without-node
-brew install --HEAD libimobiledevice
 
 # Cask
 brew tap homebrew/cask
 brew cask install \
-	1password
+	1password \
 	1password-cli \
 	atom \
 	discord \

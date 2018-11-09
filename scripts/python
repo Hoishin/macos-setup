@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
@@ -16,16 +16,6 @@ pyenv virtualenv 3.7.0 neovim3
 
 pyenv activate neovim2
 pip install neovim
-PY_PATH_2=$(pyenv which python)
 
 pyenv activate neovim3
 pip install neovim
-PY_PATH_3=$(pyenv which python)
-
-pip install flake8
-ln -s $(pyenv which flake8) ~/bin/flake8
-
-echo "Add the following lines to your init.vim"
-echo ""
-echo "let g:python_host_prog = '$PY_PATH_2'"
-echo "let g:python3_host_prog = '$PY_PATH_3'"

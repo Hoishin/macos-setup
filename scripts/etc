@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+# Install iterm2 colour theme
+curl -fsL https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
+open /tmp/Snazzy.itermcolors
+
+# Enable hold-to-repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Make local bin
+mkdir -p ~/bin
+
+# Install im-select for VSCode Vim
+curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
+
+# Default to zsh
+echo $(which zsh) | sudo tee -a /etc/shells
+chsh -s $(which zsh)

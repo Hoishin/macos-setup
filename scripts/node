@@ -1,18 +1,19 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 curl -fsL https://github.com/creationix/nvm/raw/master/install.sh | bash
 source $HOME/.nvm/nvm.sh
 
+nvm install 8
 nvm install 10
+nvm use 10
+nvm alias default 10
 
 npm install --global pure-prompt
 
 yarn global add \
-	@nestjs/cli \
 	@vue/cli \
-	apidoc \
 	bower \
 	browserslist \
 	clipboard-cli \
@@ -26,20 +27,16 @@ yarn global add \
 	get-port-cli \
 	http-server \
 	internal-ip-cli \
-	javascript-typescript-langserver \
 	jsdoc \
 	lock-cli \
 	make-dir-cli \
 	neovim \
-	node-notifier-cli \
 	nodecg-cli \
 	np \
 	onchange \
-	pg-stored-procedure \
 	pm2 \
 	prettier \
 	public-ip-cli \
-	release-it \
 	serverless \
 	sort-package-json \
 	trash-cli \
@@ -47,12 +44,7 @@ yarn global add \
 	trymodule \
 	ts-node \
 	tslint \
-	typed-css-modules \
 	typedoc \
 	typescript \
-	typewiz \
-	typewiz-node \
-	vue-language-server \
 	vuepress \
-	xo \
 	yo

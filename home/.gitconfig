@@ -183,11 +183,3 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
-[user]
-	name = Hoishin
-	email = hoishinxii@gmail.com
-	signingkey = F6208E230EC45EBD
-[commit]
-	gpgsign = true
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
