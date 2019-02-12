@@ -13,11 +13,11 @@ brew install \
 	ctags \
 	git \
 	neovim \
-	zsh \
-	zsh-syntax-highlighting \
 	pyenv \
 	pyenv-virtualenv \
-	rbenv
+	rbenv \
+	zsh \
+	zsh-syntax-highlighting
 
 brew install yarn --ignore-dependencies
 
@@ -28,8 +28,10 @@ brew cask install \
 	atom \
 	discord \
 	docker \
+	firefox \
 	gimp \
 	gitkraken \
+	google-backup-and-sync \
 	google-chrome \
 	google-japanese-ime \
 	hyperswitch \
@@ -41,8 +43,6 @@ brew cask install \
 	postico \
 	slack \
 	spotify \
-	visual-studio-code \
-	firefox \
-	google-backup-and-sync
+	visual-studio-code
 
 brew cleanup
