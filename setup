@@ -5,7 +5,6 @@ set -eu
 cd $(dirname $0)
 
 ./scripts/brew
-./scripts/git
 ./scripts/node
 ./scripts/python
 ./scripts/ruby
