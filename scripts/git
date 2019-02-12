@@ -1,7 +1,3 @@
 #!/bin/bash
 
 set -e
-
-# Git LFS setup
-git lfs install
-git lfs install --system

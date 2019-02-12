@@ -2,49 +2,19 @@
 
 set -e
 
-curl -fsL https://github.com/creationix/nvm/raw/master/install.sh | bash
-source $HOME/.nvm/nvm.sh
+curl -L https://git.io/n-install | bash
 
-nvm install 8
-nvm install 10
-nvm use 10
-nvm alias default 10
-
-npm install --global pure-prompt
-
-yarn global add \
-	@vue/cli \
-	bower \
-	browserslist \
-	clipboard-cli \
-	del-cli \
-	dts-gen \
-	esdoc \
-	eslint \
-	find-process \
+npm install --global \
+	@hoishin/editorconfig \
 	fkill-cli \
-	generator-nm \
-	get-port-cli \
-	http-server \
-	internal-ip-cli \
-	jsdoc \
-	lock-cli \
-	make-dir-cli \
+	internal-ip-cli\
 	neovim \
-	nodecg-cli \
 	np \
 	onchange \
-	pm2 \
-	prettier \
 	public-ip-cli \
-	serverless \
+	pure-prompt \
 	sort-package-json \
 	trash-cli \
-	tree-cli \
 	trymodule \
 	ts-node \
-	tslint \
-	typedoc \
-	typescript \
-	vuepress \
-	yo
+	typescript
