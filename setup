@@ -8,5 +8,6 @@ cd $(dirname $0)
 ./scripts/node
 ./scripts/python
 ./scripts/ruby
+./scripts/haskell
 ./scripts/vim
 ./scripts/etc
