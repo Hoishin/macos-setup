@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+curl -sSL https://get.haskellstack.org/ | sh
+stack update
+git clone --recurse-submodules https://github.com/haskell/haskell-ide-engine ~/.haskell-ide-engine
