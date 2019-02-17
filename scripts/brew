@@ -17,7 +17,8 @@ brew install \
 	pyenv-virtualenv \
 	rbenv \
 	zsh \
-	zsh-syntax-highlighting
+	zsh-syntax-highlighting \
+	bat
 
 brew install yarn --ignore-dependencies
 
@@ -43,6 +44,7 @@ brew cask install \
 	postico \
 	slack \
 	spotify \
-	visual-studio-code
+	visual-studio-code \
+	mactex
 
 brew cleanup
