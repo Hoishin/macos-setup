@@ -6,10 +6,6 @@ set -e
 curl -fsL https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
 open /tmp/Snazzy.itermcolors
 
-# Change screenshot destination
-mkdir -p "$HOME/Pictures/screenshot"
-defaults write com.apple.screencapture location "$HOME/Pictures/screenshot"
-
 # Make local bin
 mkdir -p ~/bin
 
