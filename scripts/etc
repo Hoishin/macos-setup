@@ -6,9 +6,6 @@ set -e
 curl -fsL https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
 open /tmp/Snazzy.itermcolors
 
-# Enable hold-to-repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
 # Change screenshot destination
 mkdir -p "$HOME/Pictures/screenshot"
 defaults write com.apple.screencapture location "$HOME/Pictures/screenshot"
