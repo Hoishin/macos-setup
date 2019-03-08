@@ -12,13 +12,15 @@ brew upgrade
 brew install \
 	ctags \
 	git \
+	git-lfs \
 	neovim \
 	pyenv \
 	pyenv-virtualenv \
 	rbenv \
 	zsh \
 	zsh-syntax-highlighting \
-	bat
+	bat \
+	ansible
 
 brew install yarn --ignore-dependencies
 
