@@ -32,6 +32,12 @@ eval "$(pyenv virtualenv-init -)"
 # rbenv
 eval "$(rbenv init -)"
 
+# goenv
+eval "$(goenv init -)"
+
+# perl local cpanm
+eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

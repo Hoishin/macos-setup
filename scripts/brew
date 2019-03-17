@@ -17,6 +17,7 @@ brew install \
 	pyenv \
 	pyenv-virtualenv \
 	rbenv \
+	goenv \
 	zsh \
 	zsh-syntax-highlighting \
 	bat \
