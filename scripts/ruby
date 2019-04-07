@@ -1,8 +1,10 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 rbenv install ${RUBY_VERSION}
 rbenv global ${RUBY_VERSION}
+
+PATH="$HOME/.rbenv/shims:$PATH"
 
 gem install neovim travis

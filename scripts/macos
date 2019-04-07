@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 # Close any open System Preference
 osascript -e 'tell application "System Preferences" to quit'
@@ -217,7 +217,7 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 0;"name" = "MENU_OTHER";}'
 
 # Load new settings before rebuilding the index
-killall mds  2>&1
+killall mds  2>&1 || true # Emits error if no process is found
 
 # Make sure indexing is enabled for the main volume
 sudo mdutil -i on /

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-set -eu
+set -e
 
 cd $(dirname $0)
 
-./config
+source config
 ./scripts/brew
 ./scripts/node
 ./scripts/python
@@ -14,3 +14,4 @@ cd $(dirname $0)
 ./scripts/rust
 ./scripts/vim
 ./scripts/etc
+./scripts/macos

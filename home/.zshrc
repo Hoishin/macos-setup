@@ -35,8 +35,8 @@ eval "$(rbenv init -)"
 # goenv
 eval "$(goenv init -)"
 
-# perl local cpanm
-eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+# rustup
+source $HOME/.cargo/env
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
