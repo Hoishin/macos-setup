@@ -22,8 +22,9 @@ for file in ~/.zsh_source/.{path,exports,aliases,functions,extra,prompt}; do
 done;
 unset file;
 
-# Added by n-install (see http://git.io/n-install-repo).
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+# tj/n
+export N_PREFIX="$HOME/n"
+export PATH="$N_PREFIX/bin:$PATH"
 
 # pyenv
 eval "$(pyenv init -)"
