@@ -1,8 +1,8 @@
 #!/bin/bash
 
-set -e
+set -eu
 
-rbenv install 2.6.1
-rbenv global 2.6.1
+rbenv install ${RUBY_VERSION}
+rbenv global ${RUBY_VERSION}
 
 gem install neovim travis

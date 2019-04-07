@@ -4,10 +4,13 @@ set -eu
 
 cd $(dirname $0)
 
+./config
 ./scripts/brew
 ./scripts/node
 ./scripts/python
 ./scripts/ruby
 ./scripts/haskell
+./scripts/go
+./scripts/rust
 ./scripts/vim
 ./scripts/etc

@@ -1,8 +1,10 @@
 #!/bin/bash
 
-set -e
+set -eu
 
 curl -L https://git.io/n-install | bash
+
+n ${NODE_VERSION}
 
 npm install --global \
 	@hoishin/editorconfig \

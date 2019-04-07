@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -eu
 
 # Install iterm2 colour theme
 curl -fsL https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
@@ -11,9 +11,6 @@ mkdir -p ~/bin
 
 # Install im-select for VSCode Vim
 curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
-
-# Enable Git LFS
-git lfs install
 
 # Default to zsh
 echo $(which zsh) | sudo tee -a /etc/shells

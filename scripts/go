@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu
+
+goenv install ${GOLANG_VERSION}
+goenv global ${GOLANG_VERSION}
