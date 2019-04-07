@@ -12,7 +12,6 @@ brew upgrade
 brew install \
 	ctags \
 	git \
-	git-lfs \
 	neovim \
 	pyenv \
 	pyenv-virtualenv \
