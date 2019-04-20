@@ -15,6 +15,7 @@ brew install \
 	neovim \
 	pyenv \
 	pyenv-virtualenv \
+	pipenv \
 	rbenv \
 	goenv \
 	zsh \
