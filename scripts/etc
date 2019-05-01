@@ -12,6 +12,13 @@ mkdir -p ~/bin
 # Install im-select for VSCode Vim
 curl -Ls https://raw.githubusercontent.com/daipeihust/im-select/master/install_mac.sh | sh
 
+# Install woff2 compressor
+git clone --recursive https://github.com/google/woff2.git ~/woff2
+cd ~/woff2
+make clean all
+mv woff2_compress woff2_decompress woff2_info ~/bin/
+cd -
+
 # Default to zsh
 echo $(which zsh) | sudo tee -a /etc/shells
 chsh -s $(which zsh)
