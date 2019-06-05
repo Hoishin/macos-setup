@@ -21,7 +21,8 @@ brew install \
 	zsh \
 	zsh-syntax-highlighting \
 	bat \
-	ansible
+	ansible \
+	gnupg
 
 brew install yarn --ignore-dependencies
 
