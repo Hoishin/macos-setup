@@ -165,3 +165,9 @@
 [user]
 	name = Hoishin
 	email = hoishinxii@gmail.com
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /usr/local/bin/gpg
