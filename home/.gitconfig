@@ -165,6 +165,7 @@
 [user]
 	name = Hoishin
 	email = hoishinxii@gmail.com
+	signingkey = 2E6CCF4E6ABE42B6
 
 [commit]
 	gpgsign = true
