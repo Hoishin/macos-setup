@@ -22,7 +22,8 @@ brew install \
 	zsh-syntax-highlighting \
 	bat \
 	ansible \
-	gnupg
+	gnupg \
+	git-lfs
 
 brew install yarn --ignore-dependencies
 
