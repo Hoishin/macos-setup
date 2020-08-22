@@ -2,10 +2,6 @@
 
 set -e
 
-curl -L https://git.io/n-install | bash
-
-PATH="$HOME/n/bin:$PATH"
-
 npm install --global \
 	@hoishin/editorconfig \
 	fkill-cli \
@@ -19,4 +15,8 @@ npm install --global \
 	trash-cli \
 	trymodule \
 	ts-node \
-	typescript
+	typescript \
+	bower \
+	nodecg-cli \
+	npm-check \
+	pkg

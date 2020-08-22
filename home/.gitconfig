@@ -163,12 +163,17 @@
 	followTags = true
 
 [user]
-	name = Hoishin
+	name = Keiichiro Amemiya
 	email = hoishinxii@gmail.com
-	signingkey = 2E6CCF4E6ABE42B6
 
 [commit]
 	gpgsign = true
 
 [gpg]
 	program = /usr/local/bin/gpg
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f

@@ -22,10 +22,6 @@ for file in ~/.zsh_source/.{path,exports,aliases,functions,extra,prompt}; do
 done;
 unset file;
 
-# tj/n
-export N_PREFIX="$HOME/n"
-export PATH="$N_PREFIX/bin:$PATH"
-
 # pyenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

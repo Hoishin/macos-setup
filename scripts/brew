@@ -23,7 +23,12 @@ brew install \
 	bat \
 	ansible \
 	gnupg \
-	git-lfs
+	git-lfs \
+	hub \
+	lua \
+	n \
+	streamlink \
+	unar
 
 brew install yarn --ignore-dependencies
 
@@ -36,7 +41,6 @@ brew cask install \
 	docker \
 	firefox \
 	gimp \
-	gitkraken \
 	google-backup-and-sync \
 	google-chrome \
 	google-japanese-ime \
@@ -50,6 +54,9 @@ brew cask install \
 	slack \
 	spotify \
 	visual-studio-code \
-	mactex
-
-brew cleanup
+	mactex \
+	the-unarchiver \
+	mpv \
+	jasper \
+	vlc \
+	fork

@@ -10,6 +10,10 @@ curl -L https://github.com/Hoishin/macos-setup/raw/master/entry.sh | bash
 
 ## Stuff to be done manually
 
+### Setup git GPG
+
+https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification
+
 ### vim
 
 - Launch vim
@@ -17,7 +21,7 @@ curl -L https://github.com/Hoishin/macos-setup/raw/master/entry.sh | bash
 - Relaunch
 - Run `:checkhealth`
 
-### Generate SSH keys
+### Generate/Copy SSH keys
 
 ### Google Chrome
 
@@ -94,10 +98,9 @@ curl -L https://github.com/Hoishin/macos-setup/raw/master/entry.sh | bash
 
 #### Backup and Sync
 
-- Login and sync
-- Sync Desktop, Pictures and Documents
-- Use "High Quality"
+- Login
 - Create `GoogleDrive` directory and select it
+- Uncheck big directory and sync
 
 #### Discord
 
