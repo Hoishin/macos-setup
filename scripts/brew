@@ -3,7 +3,7 @@
 set -e
 
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Install packages from Homebrew
 brew update
@@ -28,9 +28,8 @@ brew install \
 	lua \
 	n \
 	streamlink \
-	unar
-
-brew install yarn --ignore-dependencies
+	unar \
+	yarn
 
 # Cask
 brew tap homebrew/cask
