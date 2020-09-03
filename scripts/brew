@@ -58,4 +58,6 @@ brew cask install \
 	mpv \
 	jasper \
 	vlc \
-	fork
+	fork \
+	oracle-jdk \
+	wireshark
