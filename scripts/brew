@@ -60,4 +60,5 @@ brew cask install \
 	vlc \
 	fork \
 	oracle-jdk \
-	wireshark
+	wireshark \
+	gpg-suite
