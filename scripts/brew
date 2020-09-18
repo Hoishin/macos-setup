@@ -24,7 +24,7 @@ brew install \
 	ansible \
 	gnupg \
 	git-lfs \
-	hub \
+	gh \
 	lua \
 	n \
 	streamlink \
