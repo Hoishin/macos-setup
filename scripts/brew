@@ -33,7 +33,7 @@ brew install \
 
 # Cask
 brew tap homebrew/cask
-brew cask install \
+brew install --cask \
 	1password \
 	atom \
 	discord \
