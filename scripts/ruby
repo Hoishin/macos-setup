@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 rbenv install ${RUBY_VERSION}
 rbenv global ${RUBY_VERSION}

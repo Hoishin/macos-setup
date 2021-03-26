@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 # Close any open System Preference
 osascript -e 'tell application "System Preferences" to quit'

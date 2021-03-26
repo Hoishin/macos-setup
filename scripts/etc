@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 # Install iterm2 colour theme
 curl -fsL https://raw.githubusercontent.com/sindresorhus/iterm2-snazzy/main/Snazzy.itermcolors > /tmp/Snazzy.itermcolors

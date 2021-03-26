@@ -1,5 +1,5 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 curl https://sh.rustup.rs -sSf | sh

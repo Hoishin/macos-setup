@@ -17,7 +17,7 @@ bindkey -v
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.zsh_source/.{path,exports,aliases,functions,extra,prompt}; do
+for file in ~/.zsh_source/.{exports,path,aliases,functions,extra,prompt}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

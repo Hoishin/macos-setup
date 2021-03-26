@@ -162,10 +162,6 @@
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
-[user]
-	name = Keiichiro Amemiya
-	email = hoishinxii@gmail.com
-
 [commit]
 	gpgsign = true
 
@@ -177,5 +173,6 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+
 [pull]
 	ff = only
