@@ -3,7 +3,7 @@
 set -e
 
 # Install iterm2 colour theme
-curl -fsL https://github.com/sindresorhus/iterm2-snazzy/raw/master/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
+curl -fsL https://raw.githubusercontent.com/sindresorhus/iterm2-snazzy/main/Snazzy.itermcolors > /tmp/Snazzy.itermcolors
 open /tmp/Snazzy.itermcolors
 
 # Make local bin
