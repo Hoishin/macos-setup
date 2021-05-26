@@ -30,9 +30,3 @@ export MANPAGER='less -X';
 
 # Disable timeout after pressing ESC in vim mode
 export KEYTIMEOUT=1
-
-# Allow gpg to prompt for password
-export GPG_TTY=$(tty)
-
-# goenv
-export GOENV_ROOT="$HOME/.goenv"

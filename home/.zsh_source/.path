@@ -2,10 +2,3 @@
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
-
-# Haskell
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/Library/Haskell/bin:$PATH"
-
-# goenv
-export PATH="$GOENV_ROOT/bin:$PATH"

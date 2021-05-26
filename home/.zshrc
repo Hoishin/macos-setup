@@ -35,6 +35,8 @@ eval "$(pyenv virtualenv-init -)"
 eval "$(rbenv init -)"
 
 # goenv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 
 # rustup
@@ -44,6 +46,8 @@ source $HOME/.cargo/env
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Haskell Stack bash completion
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 eval "$(stack --bash-completion-script stack)"
 
 # added by travis gem

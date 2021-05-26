@@ -19,4 +19,5 @@ npm install --global \
 	bower \
 	nodecg-cli \
 	npm-check \
-	pkg
+	pkg \
+	yarn
