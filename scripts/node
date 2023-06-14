@@ -3,21 +3,8 @@
 set -ex
 
 npm install --global \
-	@hoishin/editorconfig \
 	fkill-cli \
 	internal-ip-cli\
 	neovim \
-	np \
 	onchange \
-	public-ip-cli \
-	pure-prompt \
-	sort-package-json \
-	trash-cli \
-	trymodule \
-	ts-node \
-	typescript \
-	bower \
-	nodecg-cli \
-	npm-check \
-	pkg \
-	yarn
+	public-ip-cli
