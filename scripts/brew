@@ -28,7 +28,8 @@ brew install \
 	n \
 	streamlink \
 	unar \
-	fzf
+	fzf \
+	pure
 
 # Cask
 brew tap homebrew/cask
