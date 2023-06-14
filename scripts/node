@@ -2,6 +2,10 @@
 
 set -ex
 
+curl -L https://bit.ly/n-install | bash
+
+n lts
+
 npm install --global \
 	fkill-cli \
 	internal-ip-cli\
