@@ -25,7 +25,9 @@ brew install \
 	n \
 	unar \
 	fzf \
-	pure
+	pure \
+	yarn \
+	pnpm
 
 # Cask
 brew tap homebrew/cask

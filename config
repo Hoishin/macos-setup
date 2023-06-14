@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export GOLANG_VERSION=1.16.2
-export NODE_VERSION=14
 export PYTHON2_VERSION=2.7.18
-export PYTHON3_VERSION=3.9.2
-export RUBY_VERSION=3.0.0
+export PYTHON3_VERSION=3.11.4
+export RUBY_VERSION='3.2.2'

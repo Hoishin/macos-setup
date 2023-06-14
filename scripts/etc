@@ -19,3 +19,6 @@ cd -
 # Default to zsh
 echo $(which zsh) | sudo tee -a /etc/shells
 chsh -s $(which zsh)
+
+# Isntall fzf
+$(brew --prefix)/opt/fzf/install

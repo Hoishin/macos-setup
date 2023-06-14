@@ -7,4 +7,4 @@ rbenv global ${RUBY_VERSION}
 
 PATH="$HOME/.rbenv/shims:$PATH"
 
-gem install neovim travis
+gem install neovim 
